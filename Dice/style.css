@@ -1,0 +1,129 @@
+#body {
+    background-color: #103e5c;
+    color: aliceblue;
+    animation: firstCycle 50s;
+}
+@keyframes firstCycle {
+    0% {background-color: #144d73}
+    50% {background-color: #3498db}
+    100% {background-color: #103e5c}
+}
+
+.menu {
+    float: left;
+    width: 49vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #e5e5f7;
+    color: #06141f;
+    font-weight: bold;
+    font-size: large;
+}
+.menu div {
+    padding: 10px;
+    border-bottom: #444cf7 double;
+    text-align: center;
+}
+
+.menu span {
+    display: inline-block;
+    border: black solid;
+    padding: 10px;
+    background: RGBA(218,223,225,1);
+    box-shadow: 0 5px 10px 5px rgba(0,0,0,0.75);
+
+}
+
+#needsBar {
+    display: flex;
+    justify-content: center;
+}
+
+#needsBar span {
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+#needsBar object{
+    display: block;
+    margin: auto;
+}
+
+#ageUp object{
+    display: block;
+    margin: auto;
+}
+
+.popUpClass {
+    display: none; /* Initially hide the pop-up */
+    position: fixed; /* Keep it fixed on the screen */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the pop-up */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Optional shadow */
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    text-align: center;
+    z-index: 2;
+}
+
+
+#containerElement {
+    display: none;
+    position: fixed; /* Keep the pop-up centered */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 1; /* Ensure pop-up is on top of other elements */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Optional shadow */
+}
+#containerElement ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#containerElement li {
+    margin-bottom: 5px;
+}
+
+#option4-1 {
+    float: left;
+}
+
+#option4-2 {
+    float: right;
+}
+#animation {
+    float: right;
+}
+#Scene {
+    width: 49vw;
+}
+
+#A {
+    background: green;
+}
+
+#B {
+    color: green;
+    text-decoration: underline;
+}
+
+
+button {
+    background-color: rgb(81, 46, 187);
+    margin: 10px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5%;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DES221</title>
+    <script src="components/SerialComponent/SerialComponent.js"></script>
+    <script src="components/MIDIComponent/MIDIComponent.js"></script>
+    <script src="components/GraphicsComponent/GraphicsComponent.js"></script>
+    <script src="https://cdn.socket.io/4.6.0/socket.io.min.js" integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="componentStyle.css">
+  </head>
+  <body id="body">
+
+  <div class="menu">
+    <div id="option1">Leisure</div>
+    <div id="option2">Education</div>
+    <div id="option3">Social</div>
+    <div id="option4">Employment</div>
+    <div id="option5">Assets</div>
+    <div id="skipWeek"><object id="plusSVG" data="components/SVG/Plus.svg" type="image/svg+xml"></object></div>
+    <div id="needsBar">
+      <span id="health"><object id="healthSVG" data="components/SVG/Health.svg" type="image/svg+xml"></object></span>
+      <span id="social"><object id="socialSVG" data="components/SVG/Social.svg" type="image/svg+xml"></object></span>
+      <span id="money"><object id="moneySVG" data="components/SVG/Money.svg" type="image/svg+xml"></object></span>
+      <span id="score">Score: 0</span>
+    </div>
+  </div>
+
+  <div class="popUpClass" id="popUp"></div>
+  <div id="containerElement">
+    <div id="getJob"></div>
+    <div id="degreeList"></div>
+    <div id="optionB1">Apply</div>
+    <div id="optionB2">Exit</div>
+  </div>
+  <div id="animation">
+    <object id="Scene" data="components/SVG/Scene.Svg" type="image/svg+xml"></object>
+  </div>
+
+  <!-- add your html interface here -->
+    <custom-serial id="customSerial"></custom-serial>
+    <custom-midi id="customMidi"></custom-midi>
+    <custom-graphics id="customGraphics"></custom-graphics>
+    <script src="index.js"></script>
+  </body>
+</html>
