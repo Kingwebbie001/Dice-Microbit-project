@@ -9,9 +9,13 @@ const svgHealthIcon = document.getElementById('healthSVG');
 const svgSocialIcon = document.getElementById('socialSVG');
 
 
-
-
-
+function sendStringToMicrobit(str) {
+  const serialComponent = document.querySelector('custom-serial');
+  if (serialComponent) {
+    serialComponent.writeString(`${str}\n`);
+    console.log('Sent string '+str);
+  }
+}
 
 svgObjectScene.addEventListener('load', function() {
 
@@ -747,14 +751,6 @@ svgObjectScene.addEventListener('load', function() {
   adjustTimings();
   //Scene animation and initialisation
 
-
-  function sendStringToMicrobit(str) {
-    const serialComponent = document.querySelector('custom-serial');
-    if (serialComponent) {
-      serialComponent.writeToSerial(`${str}\n`);
-      console.log('Sent string '+str);
-    }
-  }
 });
 
 // put any javascript you need for your interface here
